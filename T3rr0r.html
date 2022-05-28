@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name='og:description' content='T3rr0r'
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<h1>Use Code Diddy</h1>
+
+<script>
+  function populate() {
+    while(true) {
+      let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+      if (windowRelativeBottom > document.documentElement.clientHeight + 100000) break;
+      document.body.insertAdjacentHTML("beforeend", `<p><a href="https://www.youtube.com/c/T3rr0r626">Subscribe to T3rr0r or Ryan will unbox YOU</a></p>`);
+    }
+  }
+
+  window.addEventListener('scroll', populate);
+
+  populate(); // init document
+</script>
+
+</body>
+</html>
